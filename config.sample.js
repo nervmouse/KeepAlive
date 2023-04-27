@@ -3,11 +3,19 @@ module.exports = {
     {
       name: "holmes server",
       url: "http://127.0.0.1:3040/api",
-      interval: 5000,
+      interval: 60000,
       run: {
-        base_dir: "D:\\projects\\holmes\\server",
+        base_dir: "D:\\server\\holmes\\server",
         cmd: "run.bat",
-        //cmd: "start cmd.exe /K run.bat",
+      },
+    },
+    {
+      name: "oneapi server",
+      url: "http://127.0.0.1:3000/api",
+      interval: 60000,
+      run: {
+        base_dir: "D:\\Server\\OneAPI2",
+        cmd: "run.bat",
       },
     },
   ],
