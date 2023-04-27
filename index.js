@@ -12,7 +12,10 @@ for (const task of config.sites){
   const timeHdl=setInterval(async () => {
     try{
       const res = await axios.get(task.url);
-      log("alive : ", task.url);
+      if (task.debug){
+        log("alive : ", task.url);
+      }
+      
       //console.log(res)
     }catch(e){
       log('server down:',(task.name || task.url))
