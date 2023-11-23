@@ -2,7 +2,7 @@
 .thumbs.db
 node_modules
 
-
+*.bat
 /config.js
 # Quasar core related directories
 .quasar
